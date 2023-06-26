@@ -1,13 +1,60 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(140deg, rgba(0,0,0,0.5),rgba(4, 63, 78, 0.5));
+}
+
+.calculator{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+form input{
+  border: none;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  background-color: rgb(0, 0, 7);
+  margin: 2px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+form input[type='text']{
+  color: black;
+}
+
+form input[type='button']:hover{
+  background-color: rgb(0, 2, 40);
+}
+
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0 15px 0;
+}
+
+form .display input{
+  text-align: right;
+  flex: 1;
+  padding: 5px 10px;
+  background-color: rgb(228, 228, 228);
+}
+
+form input.equal{
+  width: 122px;
 }
